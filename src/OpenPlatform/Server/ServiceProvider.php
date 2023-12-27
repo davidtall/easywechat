@@ -23,7 +23,8 @@ class ServiceProvider implements ServiceProviderInterface
             return new Encryptor(
                 $app['config']['app_id'],
                 $app['config']['token'],
-                $app['config']['aes_key']
+                $app['config']['aes_key'],
+                $app['config']['app_id']
             );
         };
 
